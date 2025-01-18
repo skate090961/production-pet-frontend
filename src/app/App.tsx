@@ -7,9 +7,10 @@ import {Header} from "@/widgets/Header";
 
 const App = () => {
     const { theme } = useTheme();
+    const classNames = clsx('app', theme);
 
     return (
-        <div className={clsx('app', theme)}>
+        <div className={classNames}>
             <Header/>
             <div className={'container'}>
                 <AppRouter/>
