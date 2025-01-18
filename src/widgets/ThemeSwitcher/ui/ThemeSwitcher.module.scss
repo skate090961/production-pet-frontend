@@ -1,0 +1,10 @@
+.themeSwitcher {
+  svg path {
+    stroke: var(--header-link-color);
+    transition: 0.3s;
+  }
+
+  &:hover svg path {
+    stroke: var(--primary-color);
+  }
+}
