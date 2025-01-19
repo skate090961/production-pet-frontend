@@ -74,4 +74,8 @@
 
 .clear {
   padding: 0;
+
+  &:focus-visible {
+    border: 1px solid var(--secondary-color);
+  }
 }

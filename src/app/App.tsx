@@ -12,7 +12,7 @@ const App = () => {
 
     return (
         <div className={classNames}>
-            <Suspense fallback={'...LOADING'}>
+            <Suspense fallback={''}>
                 <Header/>
                 <div className={'container'}>
                     <Gradient/>
