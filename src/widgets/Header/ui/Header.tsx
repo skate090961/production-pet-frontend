@@ -14,7 +14,7 @@ export const Header = ({className}: NavbarProps) => {
     return (
         <header className={clsx(styles.header, className)}>
             <div className={styles.container}>
-                <img src="#" alt="логотип"/>
+                {/*<img src="#" alt="логотип"/>*/}
                 <nav>
                     <Button as={Link} to={RoutePath.main} variant={VariantsButton.LINK}>
                         <Typography className={styles.link}>Главная</Typography>

@@ -4,6 +4,7 @@ import {useTheme} from "@/app/providers/ThemeProvider";
 import {AppRouter} from "@/app/providers/router";
 import {clsx} from "clsx";
 import {Header} from "@/widgets/Header";
+import {Gradient} from "@/shared/ui/Gradient";
 
 const App = () => {
     const { theme } = useTheme();
@@ -11,6 +12,7 @@ const App = () => {
 
     return (
         <div className={classNames}>
+            <Gradient/>
             <Header/>
             <div className={'container'}>
                 <AppRouter/>
