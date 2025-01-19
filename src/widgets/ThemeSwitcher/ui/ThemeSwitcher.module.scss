@@ -1,13 +1,13 @@
 .themeSwitcher {
-  width: 24px;
-  height: 24px;
+    width: 24px;
+    height: 24px;
 
-  svg path {
-    stroke: var(--header-link-color);
-    transition: 0.3s;
-  }
+    svg path {
+        stroke: var(--header-link-color);
+        transition: 0.3s;
+    }
 
-  &:hover svg path {
-    stroke: var(--primary-color);
-  }
+    &:hover svg path {
+        stroke: var(--primary-color);
+    }
 }

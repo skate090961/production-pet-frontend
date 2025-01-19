@@ -1,81 +1,73 @@
 .button {
-  all: unset;
+    all: unset;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    display: inline-flex;
+    gap: 0.625rem;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0.375rem 1.75rem;
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-bold);
+    line-height: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    border-radius: 0.25rem;
+    outline: 2px solid transparent;
+    transition: 0.3s;
 
-  position: relative;
-
-  cursor: pointer;
-  user-select: none;
-
-  display: inline-flex;
-  gap: 0.625rem;
-  align-items: center;
-  justify-content: center;
-
-  box-sizing: border-box;
-  padding: 0.375rem 1.75rem;
-
-  font-size: var(--font-size-m);
-  font-weight: var(--font-weight-bold);
-  line-height: 1.5rem;
-  text-align: center;
-  text-decoration: none;
-
-  background: transparent;
-  border: none;
-  border-radius: 0.25rem;
-  outline: 2px solid transparent;
-
-  transition: 0.3s;
-
-  &:disabled {
-    cursor: initial;
-  }
+    &:disabled {
+        cursor: initial;
+    }
 }
 
 .primary {
-  color: var(--color-light-100);
-  background: var(--color-accent-500);
-  box-shadow: 0 4px 18px rgb(140 97 255 / 35%);
-
-  &:hover {
-    background: var(--color-accent-300);
-  }
-
-  &:active {
-    background: var(--color-accent-700);
-  }
-
-  &:focus-visible {
+    color: var(--color-light-100);
     background: var(--color-accent-500);
-    outline: 2px solid var(--color-info-700);
-  }
+    box-shadow: 0 4px 18px rgb(140 97 255 / 35%);
 
-  &:disabled {
-    color: var(--color-light-900);
-    background: var(--color-accent-900);
-  }
+    &:hover {
+        background: var(--color-accent-300);
+    }
+
+    &:active {
+        background: var(--color-accent-700);
+    }
+
+    &:focus-visible {
+        background: var(--color-accent-500);
+        outline: 2px solid var(--color-info-700);
+    }
+
+    &:disabled {
+        color: var(--color-light-900);
+        background: var(--color-accent-900);
+    }
 }
 
 .link {
-  padding: 0;
+    padding: 0;
+    color: var(--primary-color);
+    text-decoration: none;
+    background: none;
 
-  color: var(--primary-color);
-  text-decoration: none;
-  background: none;
+    &:hover {
+        color: var(--secondary-color);
+    }
 
-  &:hover {
-    color: var(--secondary-color);
-  }
-
-  &:focus-visible {
-    border: 1px solid var(--secondary-color);
-  }
+    &:focus-visible {
+        border: 1px solid var(--secondary-color);
+    }
 }
 
 .clear {
-  padding: 0;
+    padding: 0;
 
-  &:focus-visible {
-    border: 1px solid var(--secondary-color);
-  }
+    &:focus-visible {
+        border: 1px solid var(--secondary-color);
+    }
 }

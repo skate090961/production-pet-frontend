@@ -5,22 +5,18 @@
 @import "themes/light";
 
 .app {
-  position: relative;
-  z-index: var(--app-z-index);
-  background: var(--bg-color);
-  color: var(--primary-color);
-  transition-duration: 0.7s;
-  min-height: 100vh;
+    position: relative;
+    z-index: var(--app-z-index);
+    background: var(--bg-color);
+    color: var(--primary-color);
+    transition-duration: 0.7s;
+    min-height: 100vh;
 }
 
 .container {
-  box-sizing: content-box;
-  max-width: var(--max-width);
-  padding-top: 4rem;
-  margin: 0 auto;
-  padding-inline: 12px;
-}
-
-.gradient {
-
+    box-sizing: content-box;
+    max-width: var(--max-width);
+    padding-top: 4rem;
+    margin: 0 auto;
+    padding-inline: 12px;
 }
