@@ -19,7 +19,7 @@ export const Button = <T extends ElementType = 'button'>(
     props: ButtonProps<T> & Omit<ComponentPropsWithoutRef<T>, keyof ButtonProps<T>>,
 ) => {
     const {
-        variant = VariantsButton.PRIMARY, className, as: Component = 'button', withIcon, ...rest
+        variant = VariantsButton.PRIMARY, className, as: Component = 'button', ...rest
     } = props;
     const classNames = clsx(styles.button, styles[variant], className);
 
