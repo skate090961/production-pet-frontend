@@ -1,0 +1,11 @@
+.langSwitcher {
+  button {
+    text-transform: uppercase;
+    color: var(--header-link-color);
+    transition: 0.3s;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+}

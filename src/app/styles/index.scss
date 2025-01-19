@@ -5,6 +5,8 @@
 @import "themes/light";
 
 .app {
+  position: relative;
+  z-index: var(--app-z-index);
   background: var(--bg-color);
   color: var(--primary-color);
   transition-duration: 0.7s;

@@ -2,4 +2,9 @@
   // sizes
   --max-width: 1024px;
   --header-height: 4rem;
+
+  // z-index
+  --header-z-index: 1;
+  --app-z-index: 0;
+  --gradient-bg-z-index: -1;
 }

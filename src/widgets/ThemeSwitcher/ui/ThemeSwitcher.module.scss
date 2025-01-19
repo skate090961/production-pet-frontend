@@ -1,4 +1,7 @@
 .themeSwitcher {
+  width: 24px;
+  height: 24px;
+
   svg path {
     stroke: var(--header-link-color);
     transition: 0.3s;

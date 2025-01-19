@@ -1,5 +1,6 @@
 .root {
   position: absolute;
+  z-index: var(--gradient-bg-z-index);
   left: 0;
   right: 0;
   user-select: none;

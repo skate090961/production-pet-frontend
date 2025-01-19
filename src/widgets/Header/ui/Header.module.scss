@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  z-index: 999;
+  z-index: var(--header-z-index);
   top: 2rem;
   right: 0;
   left: 0;
@@ -19,7 +19,7 @@
   backdrop-filter: blur(12px);
 }
 
-.container {
+.links {
   display: flex;
   align-items: center;
   gap: 2.5rem;
@@ -54,4 +54,16 @@
   &:hover::before {
     transform: scaleX(1);
   }
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.separator {
+  width: 1px;
+  height: 1.5rem;
+  background-color: var(--secondary-color);
 }
