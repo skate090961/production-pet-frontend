@@ -1,7 +1,7 @@
-import {lazy} from "react";
+import { lazy } from 'react';
 
-export const ArticlesPageLazy = lazy(() => new Promise(res => {
-    //@ts-ignore
-    //TODO: Удалить при деплое
-    setTimeout(() => res(import('./ArticlesPage')), 1000)
+export const ArticlesPageLazy = lazy(() => new Promise((res) => {
+    // @ts-ignore
+    // TODO: Удалить при деплое
+    setTimeout(() => res(import('./ArticlesPage')), 1000);
 }));

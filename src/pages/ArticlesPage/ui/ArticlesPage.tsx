@@ -1,8 +1,8 @@
 import React from 'react';
-import {useTranslation} from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 const ArticlesPage = () => {
-    const {t} = useTranslation('articles');
+    const { t } = useTranslation('articles');
 
     return (
         <div>

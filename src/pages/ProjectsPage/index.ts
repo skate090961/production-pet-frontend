@@ -1,3 +1,3 @@
 export {
-    ProjectsPageLazy as ProjectsPage
-} from "./ui/ProjectsPage.lazy"
+    ProjectsPageLazy as ProjectsPage,
+} from './ui/ProjectsPage.lazy';

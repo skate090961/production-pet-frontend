@@ -1,6 +1,6 @@
-import {clsx} from 'clsx';
+import { clsx } from 'clsx';
 import styles from './Gradient.module.scss';
-import MainGradientImage from "@/shared/assets/images/main-gradient.webp"
+import MainGradientImage from '@/shared/assets/images/main-gradient.webp';
 
 export enum PositionsGradient {
     TOP = 'top',
@@ -12,14 +12,14 @@ interface GradientProps {
     position?: PositionsGradient;
 }
 
-export const Gradient = ({className, position = PositionsGradient.TOP}: GradientProps) => {
+export const Gradient = ({ className, position = PositionsGradient.TOP }: GradientProps) => {
     const classNames = clsx(styles[position], styles.root, className);
 
     return (
         <div className={classNames}>
             <div className={styles.container}>
                 <div className={styles.imgContainer}>
-                    <img src={MainGradientImage} alt="градиент" className={styles.gradient}/>
+                    <img src={MainGradientImage} alt="градиент" className={styles.gradient} />
                 </div>
             </div>
         </div>

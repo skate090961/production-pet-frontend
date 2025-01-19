@@ -1,6 +1,6 @@
-import {clsx} from 'clsx';
+import { clsx } from 'clsx';
+import { ComponentPropsWithoutRef, ElementType } from 'react';
 import styles from './Button.module.scss';
-import {ComponentPropsWithoutRef, ElementType} from "react";
 
 export enum VariantsButton {
     PRIMARY = 'primary',
@@ -16,10 +16,12 @@ export type ButtonProps<T extends ElementType = 'button'> = {
 } & ComponentPropsWithoutRef<T>
 
 export const Button = <T extends ElementType = 'button'>(
-    props: ButtonProps<T> & Omit<ComponentPropsWithoutRef<T>, keyof ButtonProps<T>>
+    props: ButtonProps<T> & Omit<ComponentPropsWithoutRef<T>, keyof ButtonProps<T>>,
 ) => {
-    const { variant = VariantsButton.PRIMARY, className, as: Component = 'button', withIcon, ...rest } = props
-    const classNames = clsx(styles.button, styles[variant], className)
+    const {
+        variant = VariantsButton.PRIMARY, className, as: Component = 'button', withIcon, ...rest
+    } = props;
+    const classNames = clsx(styles.button, styles[variant], className);
 
-    return <Component className={classNames} {...rest} />
-}
+    return <Component className={classNames} {...rest} />;
+};

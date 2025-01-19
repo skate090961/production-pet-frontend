@@ -1,6 +1,6 @@
-import {clsx} from 'clsx';
+import { clsx } from 'clsx';
+import { ComponentPropsWithoutRef, ElementType } from 'react';
 import styles from './Typography.module.scss';
-import {ComponentPropsWithoutRef, ElementType} from "react";
 
 export enum VariantsTypography {
     LARGE = 'large',
@@ -23,10 +23,12 @@ export type TypographyProps<T extends ElementType = 'p'> = {
 } & ComponentPropsWithoutRef<T>
 
 export const Typography = <T extends ElementType = 'p'>(
-    props: TypographyProps<T> & ComponentPropsWithoutRef<T>
+    props: TypographyProps<T> & ComponentPropsWithoutRef<T>,
 ) => {
-    const { variant = VariantsTypography.BODY1, className, as: Component = 'p', ...rest } = props
-    const classNames = clsx(styles[variant], className)
+    const {
+        variant = VariantsTypography.BODY1, className, as: Component = 'p', ...rest
+    } = props;
+    const classNames = clsx(styles[variant], className);
 
-    return <Component className={classNames} {...rest} />
-}
+    return <Component className={classNames} {...rest} />;
+};
