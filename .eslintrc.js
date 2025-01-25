@@ -44,34 +44,32 @@ module.exports = {
             'error',
             {
                 groups: [
-                    'builtin', // Встроенные модули (например, 'react', 'path')
-                    'external', // Внешние зависимости (например, 'lodash', 'axios')
-                    'internal', // Внутренние пути (например, '@/components', 'src/utils')
-                    ['parent', 'sibling'], // Родительские и соседние файлы (например, '../utils', './styles')
-                    'index', // Индексные файлы (например, './index')
-                    'object', // Импорты типа import * as something
-                    'type', // Импорты типов (например, import type { SomeType } from 'module')
+                    'builtin',
+                    'external',
+                    'internal',
+                    ['parent', 'sibling'],
+                    'index',
+                    'object',
+                    'type',
                 ],
                 pathGroups: [
-                    // Группировка для алиасов (например, @/components)
                     {
                         pattern: '@/**',
                         group: 'internal',
                         position: 'after',
                     },
-                    // Группировка для стилей (например, CSS/SCSS модулей)
                     {
                         pattern: '*.{css,scss}',
                         group: 'index',
                         position: 'after',
                     },
                 ],
-                'newlines-between': 'always', // Пустая строка между группами
+                'newlines-between': 'always',
                 alphabetize: {
-                    order: 'asc', // Сортировка по алфавиту (A-Z)
-                    caseInsensitive: true, // Без учета регистра
+                    order: 'asc',
+                    caseInsensitive: true,
                 },
-                warnOnUnassignedImports: true, // Предупреждать, если импорт не попадает ни в одну группу
+                warnOnUnassignedImports: true,
             },
         ],
     },
