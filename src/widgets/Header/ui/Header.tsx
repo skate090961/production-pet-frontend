@@ -1,12 +1,14 @@
-import { Link } from 'react-router-dom';
 import { clsx } from 'clsx';
 import { useTranslation } from 'react-i18next';
-import styles from './Header.module.scss';
-import { Typography } from '@/shared/ui/Typography';
-import { Button, VariantsButton } from '@/shared/ui/Button';
-import { ThemeSwitcher } from '@/widgets/ThemeSwitcher';
+import { Link } from 'react-router-dom';
+
 import { RoutePath } from '@/shared/config/routeConfig';
+import { Button, VariantsButton } from '@/shared/ui/Button';
+import { Typography } from '@/shared/ui/Typography';
 import { LangSwitcher } from '@/widgets/LangSwitcher';
+import { ThemeSwitcher } from '@/widgets/ThemeSwitcher';
+
+import styles from './Header.module.scss';
 
 interface NavbarProps {
     className?: string;

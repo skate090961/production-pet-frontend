@@ -1,10 +1,12 @@
-import React, { Suspense } from 'react';
-import './styles/index.scss';
 import { clsx } from 'clsx';
-import { useTheme } from '@/app/providers/ThemeProvider';
+import React, { Suspense } from 'react';
+
 import { AppRouter } from '@/app/providers/router';
-import { Header } from '@/widgets/Header';
+import { useTheme } from '@/app/providers/ThemeProvider';
 import { Gradient } from '@/shared/ui/Gradient';
+import { Header } from '@/widgets/Header';
+
+import './styles/index.scss';
 
 const App = () => {
     const { theme } = useTheme();

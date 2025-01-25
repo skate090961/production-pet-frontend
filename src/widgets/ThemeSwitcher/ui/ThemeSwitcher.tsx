@@ -1,9 +1,11 @@
 import { clsx } from 'clsx';
-import styles from './ThemeSwitcher.module.scss';
-import { Button, VariantsButton } from '@/shared/ui/Button';
+
 import { Theme, useTheme } from '@/app/providers/ThemeProvider';
 import MoonIcon from '@/shared/assets/icons/moon.svg';
 import SunIcon from '@/shared/assets/icons/sun.svg';
+import { Button, VariantsButton } from '@/shared/ui/Button';
+
+import styles from './ThemeSwitcher.module.scss';
 
 interface ThemeSwitcherProps {
     className?: string;

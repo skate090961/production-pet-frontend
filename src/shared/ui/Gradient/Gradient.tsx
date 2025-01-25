@@ -1,7 +1,9 @@
 import { clsx } from 'clsx';
 import { useTranslation } from 'react-i18next';
-import styles from './Gradient.module.scss';
+
 import MainGradientImage from '@/shared/assets/images/main-gradient.webp';
+
+import styles from './Gradient.module.scss';
 
 export enum PositionsGradient {
     TOP = 'top',
