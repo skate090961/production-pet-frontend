@@ -4,5 +4,6 @@
     "projects": "Projects",
     "articles": "Articles"
   },
-  "gradient": "gradient"
+  "gradient": "gradient",
+  "pageNotFound": "This page could not be found"
 }

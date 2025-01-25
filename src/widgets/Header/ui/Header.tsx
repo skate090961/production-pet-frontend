@@ -22,7 +22,6 @@ export const Header = ({ className }: NavbarProps) => {
     return (
         <header className={classNames}>
             <div className={styles.links}>
-                {/* <img src="#" alt="логотип"/> */}
                 <nav>
                     <Button as={Link} to={RoutePath.main} variant={VariantsButton.LINK}>
                         <Typography className={styles.link}>{t('links.main')}</Typography>

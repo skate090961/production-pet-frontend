@@ -5,6 +5,7 @@ import { AppRouter } from '@/app/providers/router';
 import { useTheme } from '@/app/providers/ThemeProvider';
 import { Gradient } from '@/shared/ui/Gradient';
 import { Header } from '@/widgets/Header';
+import { PageLoader } from '@/widgets/PageLoader';
 
 import './styles/index.scss';
 
@@ -14,7 +15,7 @@ const App = () => {
 
     return (
         <div className={classNames}>
-            <Suspense fallback="">
+            <Suspense fallback={<PageLoader />}>
                 <Header />
                 <div className="container">
                     <Gradient />
