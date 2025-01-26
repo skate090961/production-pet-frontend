@@ -1,6 +1,6 @@
 import { clsx } from 'clsx';
 
-import { Loader } from '@/shared/ui/Loader';
+import { Loader } from '@/shared/ui/loader';
 
 import styles from './PageLoader.module.scss';
 
