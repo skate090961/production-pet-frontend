@@ -3,7 +3,7 @@ import { clsx } from 'clsx';
 import { Theme, useTheme } from '@/app/providers/theme-provider';
 import MoonIcon from '@/shared/assets/icons/moon.svg';
 import SunIcon from '@/shared/assets/icons/sun.svg';
-import { Button, VariantsButton } from '@/shared/ui/Button';
+import { Button, VariantsButton } from '@/shared/ui/button';
 
 import styles from './ThemeSwitcher.module.scss';
 

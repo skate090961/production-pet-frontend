@@ -2,8 +2,8 @@ import { clsx } from 'clsx';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { Button, VariantsButton } from '@/shared/ui/Button';
-import { Typography, VariantsTypography } from '@/shared/ui/Typography';
+import { Button, VariantsButton } from '@/shared/ui/button';
+import { Typography, VariantsTypography } from '@/shared/ui/typography';
 
 import styles from './LangSwitcher.module.scss';
 

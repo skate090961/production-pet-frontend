@@ -3,8 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 import { RoutePath } from '@/shared/config/route-config';
-import { Button, VariantsButton } from '@/shared/ui/Button';
-import { Typography } from '@/shared/ui/Typography';
+import { Button, VariantsButton } from '@/shared/ui/button';
+import { Typography } from '@/shared/ui/typography';
 import { LangSwitcher } from '@/widgets/lang-switcher';
 import { ThemeSwitcher } from '@/widgets/theme-switcher';
 

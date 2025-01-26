@@ -3,8 +3,8 @@ import React, { Suspense } from 'react';
 
 import { AppRouter } from '@/app/providers/router';
 import { useTheme } from '@/app/providers/theme-provider';
-import { Gradient } from '@/shared/ui/Gradient';
-import { Header } from '@/widgets/Header';
+import { Gradient } from '@/shared/ui/gradient';
+import { Header } from '@/widgets/header';
 import { PageLoader } from '@/widgets/page-loader';
 
 import './styles/index.scss';

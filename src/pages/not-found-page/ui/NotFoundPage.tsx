@@ -1,7 +1,7 @@
 import { clsx } from 'clsx';
 import { useTranslation } from 'react-i18next';
 
-import { Typography, VariantsTypography } from '@/shared/ui/Typography';
+import { Typography, VariantsTypography } from '@/shared/ui/typography';
 
 import styles from './NotFoundPage.module.scss';
 

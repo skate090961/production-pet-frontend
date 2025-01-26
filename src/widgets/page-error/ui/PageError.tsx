@@ -2,9 +2,9 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 import { RoutePath } from '@/shared/config/route-config';
-import { Button } from '@/shared/ui/Button';
-import { Gradient, PositionsGradient } from '@/shared/ui/Gradient';
-import { Typography, VariantsTypography } from '@/shared/ui/Typography';
+import { Button } from '@/shared/ui/button';
+import { Gradient, PositionsGradient } from '@/shared/ui/gradient';
+import { Typography, VariantsTypography } from '@/shared/ui/typography';
 
 import styles from './PageError.module.scss';
 
