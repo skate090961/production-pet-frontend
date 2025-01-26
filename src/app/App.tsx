@@ -2,10 +2,10 @@ import { clsx } from 'clsx';
 import React, { Suspense } from 'react';
 
 import { AppRouter } from '@/app/providers/router';
-import { useTheme } from '@/app/providers/ThemeProvider';
+import { useTheme } from '@/app/providers/theme-provider';
 import { Gradient } from '@/shared/ui/Gradient';
 import { Header } from '@/widgets/Header';
-import { PageLoader } from '@/widgets/PageLoader';
+import { PageLoader } from '@/widgets/page-loader';
 
 import './styles/index.scss';
 

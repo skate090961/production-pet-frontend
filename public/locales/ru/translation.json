@@ -5,5 +5,10 @@
     "articles": "Статьи"
   },
   "gradient": "градиент",
-  "pageNotFound": "Эта страница не найдена"
+  "pageNotFound": "Эта страница не найдена",
+  "pageError": {
+    "title": "Что-то пошло не так...",
+    "refreshButton": "Обновить страницу",
+    "backButton": "На главную"
+  }
 }

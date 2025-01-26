@@ -5,5 +5,10 @@
     "articles": "Articles"
   },
   "gradient": "gradient",
-  "pageNotFound": "This page could not be found"
+  "pageNotFound": "This page could not be found",
+  "pageError": {
+    "title": "Something went wrong...",
+    "refreshButton": "Refresh Page",
+    "backButton": "Go Home"
+  }
 }

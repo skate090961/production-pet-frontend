@@ -2,11 +2,11 @@ import { clsx } from 'clsx';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
-import { RoutePath } from '@/shared/config/routeConfig';
+import { RoutePath } from '@/shared/config/route-config';
 import { Button, VariantsButton } from '@/shared/ui/Button';
 import { Typography } from '@/shared/ui/Typography';
-import { LangSwitcher } from '@/widgets/LangSwitcher';
-import { ThemeSwitcher } from '@/widgets/ThemeSwitcher';
+import { LangSwitcher } from '@/widgets/lang-switcher';
+import { ThemeSwitcher } from '@/widgets/theme-switcher';
 
 import styles from './Header.module.scss';
 
