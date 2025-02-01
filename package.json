@@ -61,6 +61,7 @@
   },
   "dependencies": {
     "@fontsource/roboto": "^5.0.8",
+    "@radix-ui/react-dialog": "^1.0.4",
     "clsx": "^2.1.1",
     "i18next": "^21.6.11",
     "i18next-browser-languagedetector": "^6.1.3",

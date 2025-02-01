@@ -4,6 +4,15 @@ import webpack from 'webpack';
 import { BuildOptions } from './types/config';
 
 export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
+    const mjsLoader = {
+        test: /\.mjs$/,
+        include: /node_modules/,
+        type: 'javascript/auto',
+        resolve: {
+            fullySpecified: false,
+        },
+    };
+
     const babelLoader = {
         test: /\.(?:js|jsx|tsx)$/,
         exclude: /node_modules/,
@@ -57,6 +66,7 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
     };
 
     return [
+        mjsLoader,
         babelLoader,
         tsLoader,
         styleLoader,
